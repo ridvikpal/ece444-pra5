@@ -35,7 +35,8 @@ def do_request(session, url, message, timeout=10):
     return {"message": message, "latency_ms": latency_ms, "status": status, "label": label}
 
 if __name__ == "__main__":
-    base_url = 'http://127.0.0.1:8000' # modify this!!!
+    base_url = 'http://ece444-pra5-env.eba-thdmp6v4.us-east-1.elasticbeanstalk.com'
+    # base_url = 'http://127.0.0.1:8000'
     endpoint = '/predict'
     full_url = base_url + endpoint
 
